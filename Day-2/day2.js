@@ -59,3 +59,19 @@ function pnz(num) {
   return "posative";
 }
 console.log(pnz(5));
+
+// # 3. Calculate Electricity Bill
+
+function electricityBill(unit) {
+  let sum = 0;
+  if (unit <= 100) {
+    sum = unit * 5;
+  } else if (unit <= 200) {
+    sum = 100 * 5 + (unit - 100) * 7;
+  } else if (unit <= 250) {
+    sum = 100 * 5 + 100 * 7 + (unit - 200) * 10;
+  }
+  return sum;
+}
+
+console.log(electricityBill(201));
