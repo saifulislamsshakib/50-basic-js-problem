@@ -75,3 +75,12 @@ function electricityBill(unit) {
 }
 
 console.log(electricityBill(201));
+
+// # 5. Check if a Year is a Leap Year
+function isLeapYear(year) {
+  if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+    return true;
+  }
+  return false;
+}
+console.log(isLeapYear(2024));
