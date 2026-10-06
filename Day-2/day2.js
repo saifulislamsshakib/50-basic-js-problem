@@ -60,6 +60,15 @@ function pnz(num) {
 }
 console.log(pnz(5));
 
+function checkPositiveOrNegative(num = 0) {
+  if (num > 0) {
+    return "Positive";
+  } else if (num < 0) {
+    return "Negative";
+  }
+  return "Zero";
+}
+
 // # 3. Calculate Electricity Bill
 
 function electricityBill(unit) {
