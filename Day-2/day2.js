@@ -84,3 +84,13 @@ function isLeapYear(year) {
   return false;
 }
 console.log(isLeapYear(2024));
+
+// # 4. Check if a Character is a Vowel or Consonant
+function checkVowel(char = "0") {
+  if ("aeiou".includes(char.toLowerCase()) && char !== "") {
+    return "Vowel";
+  } else if (/[a-z]/.test(char.toLowerCase())) {
+    return "Consonant";
+  }
+  return "Not a valid alphabet";
+}
